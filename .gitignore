@@ -1,0 +1,17 @@
+.DS_Store
+.ipynb
+.txt
+.parquet
+.idea
+*.tfstate
+*.tfstate.*
+**.terraform
+**.terraform.lock.*
+**google_credentials.json
+**logs/
+**.env
+**__pycache__/
+.history
+**/pg_data/*
+serving_dir
+.ipynb_checkpoints/

@@ -1,0 +1,38 @@
+services:
+  pgdatabase:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=myuser
+      - POSTGRES_PASSWORD=mypassword
+      - POSTGRES_DB=mydatabase
+    volumes:
+      - "./pg_data:/var/lib/postgresql/data:rw"
+    ports:
+      - "5432:5432"
+    networks:
+      - pg-network
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=root
+    ports:
+      - "8080:80"
+    networks:
+      - pg-network
+networks:
+  pg-network:
+    driver: bridge
+  # python_client:
+  #   build: .
+  #   command:
+  #     - --user=myuser
+  #     - --password=mypassword
+  #     - --host=pgdatabase
+  #     - --port=5432
+  #     - --db_name=mydatabase
+  #     - --table_name=yellow_taxi_db
+  #     - --url="https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-10.parquet"
+  #     - --chunk_size=100000
+  #   depends_on:
+  #     - pgdatabase
