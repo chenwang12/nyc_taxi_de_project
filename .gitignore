@@ -1,7 +1,7 @@
 .DS_Store
-.ipynb
-.txt
-.parquet
+*.ipynb
+*.txt
+*.parquet
 .idea
 *.tfstate
 *.tfstate.*
@@ -15,3 +15,5 @@
 **/pg_data/*
 serving_dir
 .ipynb_checkpoints/
+*.gitignore
+*.pages
