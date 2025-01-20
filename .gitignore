@@ -13,7 +13,6 @@
 **__pycache__/
 .history
 **/pg_data/*
-serving_dir
 .ipynb_checkpoints/
 **.gitignore
 **.pages
