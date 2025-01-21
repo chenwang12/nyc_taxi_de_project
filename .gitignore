@@ -5,9 +5,12 @@
 .idea
 *.tfstate
 *.tfstate.*
+*.tfvars
+**/.terraform/*
 **.terraform
 **.terraform.lock.*
 **google_credentials.json
+**.log
 **logs/
 **.env
 **__pycache__/
@@ -16,3 +19,6 @@
 .ipynb_checkpoints/
 **.gitignore
 **.pages
+**.json
+
+
