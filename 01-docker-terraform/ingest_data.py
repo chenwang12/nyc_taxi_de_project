@@ -9,6 +9,7 @@ import argparse
 
 #url = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet"
 output_file="green_tripdata_2019-10.parquet"
+#output_file="zone_lookup.csv"
 
 def download_parquet_file(url, output_file):
     """Download the parquet file from the given URL."""
@@ -54,6 +55,10 @@ def main():
 
     # Step 2: Insert data into PostgreSQL
     insert_data_to_postgres(output_file, args.table_name, db_url, args.chunk_size)
+    #for Taxi Zoon lookup csv file 
+    # df_csv = pd.read_csv(output_file, iterator=True, chunksize=10000)
+    # df = next(df_csv)
+    # df.to_sql(name=args.table_name, con=db_url, if_exists='append')
 
     # Clean up downloaded file
     if os.path.exists(output_file):
