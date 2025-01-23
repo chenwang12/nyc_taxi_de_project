@@ -10,8 +10,9 @@ What's the version of `pip` in the image?
 - 24.2.1
 - 23.3.1
 - 23.2.1
+  
+<h5 style="color: red">Answer: 24.3.1</h5>
 
-<span style="color:red">Answer: 24.3.1</span>
 ![HW1-1](./images/HW1-1.png)
 
 ## Question 2. Understanding Docker networking and docker-compose
@@ -57,7 +58,7 @@ volumes:
 - db:5432
 
 If there are more than one answers, select only one of them
-<span style="color:red">Answer: db:5433</span>
+<h5 style="color: red">Answer: db:5433</h5>
 
 ## Question 3. Trip Segmentation Count
 
@@ -76,7 +77,8 @@ Answers:
 - 104,793;  202,661;  109,603;  27,678;  35,189
 - 104,838;  199,013;  109,645;  27,688;  35,202
 
-<span style="color:red">Answer: 104,802;  198,924;  109,603;  27,678;  35,189</span>
+<h5 style="color: red">Answer: 104,802;  198,924;  109,603;  27,678;  35,189</h5>
+
 ![HW1-3](./images/HW1-3.png)
 ## Question 4. Longest trip for each day
 
@@ -90,7 +92,8 @@ Tip: For every day, we only care about one single trip with the longest distance
 - 2019-10-26
 - 2019-10-31
   
-<span style="color:red">Answer: 2019-10-31</span>
+<h5 style="color: red">Answer: 2019-10-31</h5>
+
 ![HW1-4](./images/HW1-4.png)
 ## Question 5. Three biggest pickup zones
 
@@ -104,7 +107,8 @@ Consider only `lpep_pickup_datetime` when filtering by date.
 - Morningside Heights, Astoria Park, East Harlem South
 - Bedford, East Harlem North, Astoria Park
 
-<span style="color:red"><b>Answer: East Harlem North, East Harlem South, Morningside Heights</b></span>
+<h5 style="color: red">Answer: East Harlem North, East Harlem South, Morningside Heights</h5>
+
 ![HW1-5](./images/HW1-5.png)
 
 ## Question 6. Largest tip
@@ -122,7 +126,8 @@ We need the name of the zone, not the ID.
 - East Harlem North
 - East Harlem South
 
-<span style="color:red">Answer: JFK Airport</span>
+<h5 style="color: red">Answer: JFK Airport</h5>
+
 ![HW1-6](./images/HW1-6.png)
 
 
@@ -141,7 +146,7 @@ Answers:
 - terraform init, terraform apply -auto-approve, terraform destroy
 - terraform import, terraform apply -y, terraform rm
 
-<span style="color:red">Answer: terraform init, terraform apply -auto-approve, terraform destroy</span>
+<h5 style="color: red">Answer: terraform init, terraform apply -auto-approve, terraform destroy</h5>
 
 ## Submitting the solutions
 
