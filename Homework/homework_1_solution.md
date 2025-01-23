@@ -11,7 +11,7 @@ What's the version of `pip` in the image?
 - 23.3.1
 - 23.2.1
 
-<span style="color:red"><b>Answer: 24.3.1</b></span>
+<span style="color:red">Answer: 24.3.1</span>
 ![HW1-1](./images/HW1-1.png)
 
 ## Question 2. Understanding Docker networking and docker-compose
@@ -57,7 +57,7 @@ volumes:
 - db:5432
 
 If there are more than one answers, select only one of them
-<span style="color:red"><b>Answer: db:5433</b></span>
+<span style="color:red">Answer: db:5433</span>
 
 ## Question 3. Trip Segmentation Count
 
@@ -76,8 +76,7 @@ Answers:
 - 104,793;  202,661;  109,603;  27,678;  35,189
 - 104,838;  199,013;  109,645;  27,688;  35,202
 
-<span style="color:red"><b>Answer: 104,802;  198,924;  109,603;  27,678;  35,189</b></span>
-![alt text](image.png)
+<span style="color:red">Answer: 104,802;  198,924;  109,603;  27,678;  35,189</span>
 ![HW1-3](./images/HW1-3.png)
 ## Question 4. Longest trip for each day
 
@@ -91,7 +90,7 @@ Tip: For every day, we only care about one single trip with the longest distance
 - 2019-10-26
 - 2019-10-31
   
-<span style="color:red"><b>Answer: 2019-10-31</b></span>
+<span style="color:red">Answer: 2019-10-31</span>
 ![HW1-4](./images/HW1-4.png)
 ## Question 5. Three biggest pickup zones
 
@@ -123,7 +122,7 @@ We need the name of the zone, not the ID.
 - East Harlem North
 - East Harlem South
 
-<span style="color:red"><b>Answer: JFK Airport</b></span>
+<span style="color:red">Answer: JFK Airport</span>
 ![HW1-6](./images/HW1-6.png)
 
 
@@ -142,7 +141,7 @@ Answers:
 - terraform init, terraform apply -auto-approve, terraform destroy
 - terraform import, terraform apply -y, terraform rm
 
-<span style="color:red"><b>Answer: terraform init, terraform apply -auto-approve, terraform destroy</b></span>
+<span style="color:red">Answer: terraform init, terraform apply -auto-approve, terraform destroy</span>
 
 ## Submitting the solutions
 
