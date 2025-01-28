@@ -1,16 +1,16 @@
 services:
   pgdatabase:
-    image: postgres:15
+    image: postgres:17
     environment:
-      - POSTGRES_USER=myuser
-      - POSTGRES_PASSWORD=mypassword
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
       - POSTGRES_DB=mydatabase
     volumes:
       - "./pg_data:/var/lib/postgresql/data:rw"
     ports:
       - "5432:5432"
     networks:
-      - pg-network
+      - pg-network-17
   pgadmin:
     image: dpage/pgadmin4
     environment:
@@ -19,9 +19,9 @@ services:
     ports:
       - "8080:80"
     networks:
-      - pg-network
+      - pg-network-17
 networks:
-  pg-network:
+  pg-network-17:
     driver: bridge
   # python_client:
   #   build: .
