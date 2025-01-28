@@ -8,7 +8,7 @@ import os
 import argparse
 
 #url = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet"
-output_file="green_tripdata_2019-10.parquet"
+output_file="green_tripdata.parquet"
 #output_file="zone_lookup.csv"
 
 def download_parquet_file(url, output_file):
