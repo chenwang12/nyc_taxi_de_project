@@ -59,7 +59,7 @@ volumes:
 
 If there are more than one answers, select only one of them
 
-```Answer: db:5433```
+```Answer: both postgres:5432 and db:5432 ```
 
 ## Question 3. Trip Segmentation Count
 
@@ -79,7 +79,6 @@ Answers:
 - 104,838;  199,013;  109,645;  27,688;  35,202
 
 ```Answer: 104,802;  198,924;  109,603;  27,678;  35,189```
-
 ![HW1-3](./images/HW1-3.png)
 ## Question 4. Longest trip for each day
 
