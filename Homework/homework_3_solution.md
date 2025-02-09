@@ -99,7 +99,7 @@ Partitioning the table by tpep_dropoff_datetime and clustering on VendorID signi
 
 ![HW3-6](./images/HW3-6.png)
 
-![HW3-6-2](./images/Hw3-6-2.png)
+![HW3-6-2](./images/HW3-6-2.png)
 
 
 ## Question 7: 
@@ -117,7 +117,16 @@ It is best practice in Big Query to always cluster your data:
 - True
 - False
 
-`Answer: False. Clustering is not always beneficial, whether you should always cluster your data depends on your specific use case, query patterns, and data characteristics. `
+`Answer: False. Clustering is not always beneficial, whether you should always cluster your data depends on your specific use case, query patterns, and data characteristics.`
+`Clustering is not always required or beneficial:
+
+- Small Tables: If your table is small (e.g., a few gigabytes), clustering may not provide significant performance benefits.
+
+- Infrequent Queries: If the table is rarely queried, the overhead of maintaining clustered data may not be worth it.
+
+- Random Access Patterns: If your queries do not filter or group by specific columns, clustering may not help.
+
+- High Write Frequency: If your table is frequently updated (e.g., streaming inserts), clustering may introduce additional overhead`
 
 
 ## (Bonus: Not worth points) Question 9:
