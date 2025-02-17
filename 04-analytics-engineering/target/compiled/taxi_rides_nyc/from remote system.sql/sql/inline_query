@@ -1,0 +1,4 @@
+ timestamp_trunc(
+        cast(pickup_datetime as timestamp),
+        month
+    ) as revenue_month, 
