@@ -90,7 +90,10 @@ Select the option that does **NOT** apply for materializing `fct_taxi_monthly_zo
 - `dbt run --select +models/core/`
 - `dbt run --select models/staging/+`
 
-
+`Answer: 
+dbt run --select +models/core/fct_taxi_monthly_zone_revenue.sql
+dbt run --select +models/core/
+ `
 ### Question 4: dbt Macros and Jinja
 
 Consider you're dealing with sensitive data (e.g.: [PII](https://en.wikipedia.org/wiki/Personal_data)), that is **only available to your team and very selected few individuals**, in the `raw layer` of your DWH (e.g: a specific BigQuery dataset or PostgreSQL schema), 
@@ -127,6 +130,12 @@ That all being said, regarding macro above, **select all statements that are tru
 - When using `core`, it materializes in the dataset defined in `DBT_BIGQUERY_TARGET_DATASET`
 - When using `stg`, it materializes in the dataset defined in `DBT_BIGQUERY_STAGING_DATASET`, or defaults to `DBT_BIGQUERY_TARGET_DATASET`
 - When using `staging`, it materializes in the dataset defined in `DBT_BIGQUERY_STAGING_DATASET`, or defaults to `DBT_BIGQUERY_TARGET_DATASET`
+
+`Answer: all true except the second : 
+- Setting a value for `DBT_BIGQUERY_STAGING_DATASET` env var is mandatory, or it'll fail to compile
+`For non-core models, it uses: env_var(stging_env_var, env_var(target_env_var))
+The second argument provides a fallback value, so this isn't mandatory `
+
 
 
 ## Serious SQL
